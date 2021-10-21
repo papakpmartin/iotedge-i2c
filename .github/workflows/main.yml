@@ -36,7 +36,5 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build and push
-        run: docker buildx build \
-              --platform linux/amd64,linux/arm64,linux/arm/v7 \
-              -t kpmartinhfi/iotedge-i2c:latest . --push
+        run: docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t kpmartinhfi/iotedge-i2c:latest . --push
 
