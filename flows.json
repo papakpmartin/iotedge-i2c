@@ -1,0 +1,68 @@
+[
+    {
+        "id": "98a6b2c11ad67e57",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7b96799ddd7d0d7d",
+        "type": "inject",
+        "z": "98a6b2c11ad67e57",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "1bd5b9ebe3217035"
+            ]
+        ]
+    },
+    {
+        "id": "612aecde0c51a107",
+        "type": "debug",
+        "z": "98a6b2c11ad67e57",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1bd5b9ebe3217035",
+        "type": "i2c scan",
+        "z": "98a6b2c11ad67e57",
+        "name": "",
+        "busno": "1",
+        "x": 270,
+        "y": 60,
+        "wires": [
+            [
+                "612aecde0c51a107"
+            ],
+            []
+        ]
+    }
+]
