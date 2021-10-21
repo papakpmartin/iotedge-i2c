@@ -1,0 +1,8 @@
+{
+    "name": "iotedge-i2c",
+    "description": "iotedge-i2c",
+    "version": "0.0.0",
+    "dependencies": {
+        "node-red-contrib-i2c": "0.8.4"
+    }
+}
